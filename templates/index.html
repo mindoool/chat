@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chatting</title>
+<script type=""></script>
+	<script src="//js.pusher.com/2.2/pusher.min.js" type="text/javascript"></script>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="{{url_for('static',filename='js/pusher.js')}}"></script>
+	<script src="{{url_for('static',filename='css/style.css')}}"></script>
+</head>
+<body>
+	<h2> Chat </h2>
+	<form action="{{url_for('chat')}}" method="post">
+		<label>Chat</label>s
+		<input type="text" name="chat"  id="chat_cont"/>
+		<input type="button" value="button_chat" id="button-send-chat"/>
+	</form>
+	<div id="chat" style="display:block"> <div>
+	<div id="chat_err"> <div>
+</body>
+</html>
